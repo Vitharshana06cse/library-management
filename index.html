@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f2f4f7; margin: 0; padding: 30px; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 30px;
+                     border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #2c3e50; }
+        .info { background: #edf1f7; padding: 15px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { background: #34495e; color: white; padding: 10px; font-size: 13px; }
+        td { border: 1px solid #ddd; padding: 10px; text-align: center; font-size: 13px; }
+        .ok { color: green; font-weight: bold; }
+        .out { color: #c0392b; font-weight: bold; }
+        .summary { background: #e8f6ef; margin-top: 25px; padding: 20px; border-radius: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Library Management Dashboard</h1>
+    <div class="info">
+        <b>Member Name:</b> Vitharshana<br>
+        <b>Member ID:</b> 24UCS263<br>
+        <b>Department:</b> Computer Science and Engineering<br>
+        <b>Membership Type:</b> Student
+    </div>
+    <h3>Issued Books</h3>
+    <table>
+        <tr><th>Book Title</th><th>Author</th><th>Due Date</th><th>Status</th></tr>
+        <tr><td>Operating System Concepts</td><td>Silberschatz</td><td>15-Oct-2026</td><td class="ok">ISSUED</td></tr>
+        <tr><td>Database System Concepts</td><td>Korth</td><td>12-Oct-2026</td><td class="ok">ISSUED</td></tr>
+        <tr><td>Computer Networks</td><td>Tanenbaum</td><td>20-Oct-2026</td><td class="ok">ISSUED</td></tr>
+        <tr><td>Software Engineering</td><td>Pressman</td><td>05-Oct-2026</td><td class="out">OVERDUE</td></tr>
+        <tr><td>Data Structures in C</td><td>Tenenbaum</td><td>25-Oct-2026</td><td class="ok">ISSUED</td></tr>
+    </table>
+    <div class="summary">
+        <h3>Library Summary</h3>
+        <p><b>Books Issued:</b> 5 &nbsp;|&nbsp; <b>Overdue:</b> 1 &nbsp;|&nbsp; <b>Fine Due:</b> Rs. 20</p>
+    </div>
+</div>
+</body>
+</html>
